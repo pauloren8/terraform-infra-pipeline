@@ -1,4 +1,4 @@
-name: "terraform-workflow"
+name: "Terraform Workflow"
 
 on:
   workflow_call:
@@ -32,9 +32,9 @@ jobs:
         uses: actions/chekout@v4
 
       - name: Setup Terraform
-        uses: hashicorp/stup-terraform@v3
+        uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.0.3
+          terraform_version: 1.8.3
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
