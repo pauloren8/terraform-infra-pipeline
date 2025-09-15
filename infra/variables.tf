@@ -1,3 +1,4 @@
 variable "bucket_name" {
-    type = string
-    }
+  description = "Nome do bucket para armazenar os objetos"
+  type        = string
+}
